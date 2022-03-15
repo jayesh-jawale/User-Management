@@ -12,7 +12,7 @@ export const EditUsers = () => {
         })
         .then((data) => data.json())
         .then((usr) => setUsers(usr));
-    }, []);
+    }, [id]);
 
    return users ? <UpdateUsers users={users} /> : ""
 }

@@ -10,7 +10,7 @@ export const UserDetails = () => {
         })
         .then((data) => data.json())
         .then((usr) => setUsers(usr));
-    }, []);
+    }, [id]);
 
     return (
     <div className='user-details'>
